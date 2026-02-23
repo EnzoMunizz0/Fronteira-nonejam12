@@ -37,7 +37,10 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
+    {"id":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
+    {"id":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
     {"id":{"name":"scrGlobalVars","path":"scripts/scrGlobalVars/scrGlobalVars.yy",},},
+    {"id":{"name":"sLogoTemp","path":"sprites/sLogoTemp/sLogoTemp.yy",},},
     {"id":{"name":"sprTest","path":"sprites/sprTest/sprTest.yy",},},
     {"id":{"name":"sprTestCenter","path":"sprites/sprTestCenter/sprTestCenter.yy",},},
     {"id":{"name":"sprUIcon","path":"sprites/sprUIcon/sprUIcon.yy",},},
@@ -45,7 +48,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
     {"roomId":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
+    {"roomId":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
