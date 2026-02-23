@@ -1,0 +1,4 @@
+
+global.japegoualgum = 0;
+
+
