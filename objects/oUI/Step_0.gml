@@ -10,10 +10,8 @@ case StartMenuRoom:
 
 
 	if (InputPressed(INPUT_VERB.ACCEPT)) {
-		show_message("deu ceuto")
+		menuFunction(smisel);
 	}
-
-		//show_debug_message("Teste aqui do menu: "+string(startmenuitens[0][1]));
 
 
 break;

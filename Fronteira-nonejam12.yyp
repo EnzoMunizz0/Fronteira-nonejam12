@@ -86,6 +86,7 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
+    {"id":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
     {"id":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
     {"id":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
     {"id":{"name":"__InputBindingIsThumbstick","path":"scripts/__InputBindingIsThumbstick/__InputBindingIsThumbstick.yy",},},
@@ -406,6 +407,7 @@
     {"roomId":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
     {"roomId":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"roomId":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
+    {"roomId":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
