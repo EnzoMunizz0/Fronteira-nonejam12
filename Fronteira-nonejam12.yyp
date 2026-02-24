@@ -394,6 +394,7 @@
     {"id":{"name":"InputXYOldest","path":"scripts/InputXYOldest/InputXYOldest.yy",},},
     {"id":{"name":"InputY","path":"scripts/InputY/InputY.yy",},},
     {"id":{"name":"scrGlobalVars","path":"scripts/scrGlobalVars/scrGlobalVars.yy",},},
+    {"id":{"name":"scrRoomScripts","path":"scripts/scrRoomScripts/scrRoomScripts.yy",},},
     {"id":{"name":"sLogoTemp","path":"sprites/sLogoTemp/sLogoTemp.yy",},},
     {"id":{"name":"sprTest","path":"sprites/sprTest/sprTest.yy",},},
     {"id":{"name":"sprTestCenter","path":"sprites/sprTestCenter/sprTestCenter.yy",},},

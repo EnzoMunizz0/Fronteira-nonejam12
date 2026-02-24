@@ -7,12 +7,11 @@ function __InputConfigVerbs()
         DOWN,
         LEFT,
         RIGHT,
+		ROTRIGHT, // Rotate Right
+		ROTLEFT,  // Rotate Left
         ACCEPT,
         CANCEL,
-        ACTION,
-        SPECIAL,
-        PAUSE,
-        MAP,
+		PAUSE
     }
     
     enum INPUT_CLUSTER
@@ -26,8 +25,10 @@ function __InputConfigVerbs()
     InputDefineVerb(INPUT_VERB.DOWN,    "down",       [vk_down,  "S"],    [ gp_axislv, gp_padd]);
     InputDefineVerb(INPUT_VERB.LEFT,    "left",       [vk_left,  "A"],    [-gp_axislh, gp_padl]);
     InputDefineVerb(INPUT_VERB.RIGHT,   "right",      [vk_right, "D"],    [ gp_axislh, gp_padr]);
-    InputDefineVerb(INPUT_VERB.ACTION,  "action",      vk_enter,            gp_face3);
-    InputDefineVerb(INPUT_VERB.SPECIAL, "special",     vk_shift,            gp_face4);
+    InputDefineVerb(INPUT_VERB.ROTRIGHT,  "rotright",      "E",            gp_shoulderr);
+    InputDefineVerb(INPUT_VERB.ROTLEFT, "rotleft",     "Q",            gp_shoulderl);
+    InputDefineVerb(INPUT_VERB.ACCEPT,   "accept",      [vk_enter, "Z"],    gp_face1);
+    InputDefineVerb(INPUT_VERB.CANCEL,   "cancel",      [vk_escape, "X"],    gp_face2);
     
     if (INPUT_ON_SWITCH)
     {
@@ -41,7 +42,7 @@ function __InputConfigVerbs()
         InputDefineVerb(INPUT_VERB.CANCEL, "cancel", vk_backspace, gp_face2);
     }
     
-    if (INPUT_ON_PS5)
+    /*if (INPUT_ON_PS5)
     {
         //`gp_select` is inaccessible on PS5
         InputDefineVerb(INPUT_VERB.MAP, "map", vk_backspace, gp_touchpadbutton);
@@ -49,7 +50,7 @@ function __InputConfigVerbs()
     else
     {
         InputDefineVerb(INPUT_VERB.MAP, "map", vk_backspace, gp_select);
-    }
+    }*/
     
     
     //Define a cluster of verbs for moving around

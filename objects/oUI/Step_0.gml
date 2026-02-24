@@ -1,8 +1,23 @@
 
-
-smisel += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
-smisel = clamp(smisel, 1, array_length(startmenuitens));
+switch room {
 
 
-	//show_debug_message("Teste aqui do menu: "+string(startmenuitens[0][1]));
+case StartMenuRoom:
 
+
+	smisel += InputPressed(INPUT_VERB.DOWN) - InputPressed(INPUT_VERB.UP);
+	smisel = clamp(smisel, 1, array_length(startmenuitens));
+
+
+	if (InputPressed(INPUT_VERB.ACCEPT)) {
+		show_message("deu ceuto")
+	}
+
+		//show_debug_message("Teste aqui do menu: "+string(startmenuitens[0][1]));
+
+
+break;
+
+
+
+}
