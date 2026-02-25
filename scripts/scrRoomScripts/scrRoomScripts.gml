@@ -1,8 +1,8 @@
 
 
-function nextRoom(_room = StartMenuRoom, _res = 1) {
+function nextRoom(_room = StartMenuRoom, _res = 1.5) {
 	room_goto(_room);
-	surface_resize(application_surface, 256*1, 144*1);
+	surface_resize(application_surface, 256*_res, 144*_res);
 	
 }
 

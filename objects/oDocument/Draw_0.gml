@@ -1,5 +1,5 @@
 
-var _selection = position_meeting(mouse_x, mouse_y, id) * global.docsel;
+var _selection = position_meeting(mouse_x, mouse_y, id) * selecionado;
 
 draw_sprite_ext(sprite_index, -1, x+(shoffset), y+(shoffset), shsize, shsize, image_angle, c_black, .2)
 

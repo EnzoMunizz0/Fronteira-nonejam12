@@ -86,6 +86,7 @@
     {"id":{"name":"oDocument","path":"objects/oDocument/oDocument.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oUI","path":"objects/oUI/oUI.yy",},},
+    {"id":{"name":"GameRoom_1backup","path":"rooms/GameRoom_1backup/GameRoom_1backup.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"id":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
     {"id":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
@@ -403,6 +404,7 @@
     {"id":{"name":"sprPassaporteGrande","path":"sprites/sprPassaporteGrande/sprPassaporteGrande.yy",},},
     {"id":{"name":"sprPassaportePequeno","path":"sprites/sprPassaportePequeno/sprPassaportePequeno.yy",},},
     {"id":{"name":"sprTempCima","path":"sprites/sprTempCima/sprTempCima.yy",},},
+    {"id":{"name":"sprTempUI_1","path":"sprites/sprTempUI_1/sprTempUI_1.yy",},},
     {"id":{"name":"sprTempUI","path":"sprites/sprTempUI/sprTempUI.yy",},},
     {"id":{"name":"sprTest","path":"sprites/sprTest/sprTest.yy",},},
     {"id":{"name":"sprTestCenter","path":"sprites/sprTestCenter/sprTestCenter.yy",},},
@@ -416,6 +418,7 @@
     {"roomId":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
     {"roomId":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
     {"roomId":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
+    {"roomId":{"name":"GameRoom_1backup","path":"rooms/GameRoom_1backup/GameRoom_1backup.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

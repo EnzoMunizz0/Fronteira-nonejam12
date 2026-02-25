@@ -3,10 +3,11 @@ keyRotH = keyboard_check(ord("E"));
 keyRotAH = keyboard_check(ord("Q"));
 keyRotVel = keyboard_check(vk_shift);
 
-
+selecionado = 0;
 if (position_meeting(mouse_x, mouse_y, id)) {
 	
-	global.docsel = 1;
+	//global.docsel = 1;
+	selecionado = 1;
 	
     if (mouse_check_button_pressed(mb_left)) {
 		oDocument.layer = layer_get_id("Instances")
@@ -62,7 +63,7 @@ angulo += ((keyRotH*arrastando*2) - (keyRotAH*arrastando*2)) * (keyRotVel+1);
 image_angle = lerp(image_angle, angulo, .25);
 
 
-if (x <= 96) {
+if (x <= 96*1.5) {
 	var _spr = asset_get_index("spr"+string(documento)+"Pequeno")
 	if (sprite_exists(_spr)) sprite_index = _spr;
 	else sprite_index = sprTestezinhoCenter;
@@ -73,25 +74,28 @@ if (x <= 96) {
 		mouseOffset[1] = 0;
 	}
 	pequeno = 1;
-	x = clamp(x, 0, 256);
-	y = clamp(y, 0, 144);
+	x = clamp(x, 0, 256*1.5);
+	y = clamp(y, 0, 144*1.5);
 }
 else {
+	if (pequeno) {
+		shsize = .5;
+	}
 	var _spr = asset_get_index("spr"+string(documento)+"Grande")
 	if (sprite_exists(_spr)) sprite_index = _spr;
 	else sprite_index = sprTestCenter;
 	pequeno = 0;
 	cai = 0;
-	x = clamp(x, 0, 256);
-	y = clamp(y, 47, 144);
+	x = clamp(x, 0, 256*1.5);
+	y = clamp(y, 47*1.5, 144*1.5);
 }
 
 if (pequeno) {
 	
 	
-	if (y <= 112 && !arrastando) cai = 1;
+	if (y <= 112*1.5 && !arrastando) cai = 1;
 	
-	if (y >= 126) {
+	if (y >= 126*1.5) {
 		cai = 0;
 		yspd = 0;
 	}

@@ -8,20 +8,14 @@ draw_text_transformed( // Isso foi só um testezinho
 	.4, .4, 0
 );*/
 
-text_transformed_shadow(
-	mouse_x, mouse_y - 10,
-	.3, 0,
-	c_white, c_black, 1 * position_meeting(mouse_x, mouse_y, id) * global.docsel, 
-	documento, 
-	.65, .65
-)
-text_transformed_shadow(
+
+/*text_transformed_shadow(
 	mouse_x, mouse_y - 5,
 	.15, 0,
-	c_white, c_black, 1 * position_meeting(mouse_x, mouse_y, id) * global.docsel, 
+	c_white, c_black, 1 * position_meeting(mouse_x, mouse_y, id) * (global.docsel * selecionado), 
 	"Clique 'E' para analisar", 
 	.45, .45
-)
+)*/
 
 
 
