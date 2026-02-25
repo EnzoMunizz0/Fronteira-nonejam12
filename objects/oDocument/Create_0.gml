@@ -16,4 +16,8 @@ size = 1;
 shsize = size; // tamanho da sombra
 shoffset = 0; // deslocamento da sombra
 
+pequeno = 0;
+cai = 0;
 
+grv = .1;
+yspd = 0;
