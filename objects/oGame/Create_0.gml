@@ -1,5 +1,11 @@
 
 
+global.cursorForma = "default";
+
+
+
+
+
 
 
 switch room {
@@ -12,16 +18,17 @@ switch room {
 	break;
 	
 	case GameRoom:
+		instance_create_layer(0, 0, "UI", oUI);
 		var _docvars = { // Adicionar variáveis ao obj oDocument
 			documento: "Passaporte",
 			
 		};
-		instance_create_depth(217, 90, 0, oDocument, _docvars);
+		instance_create_layer(51, 189, "Instances", oDocument, _docvars);
 
 		_docvars = { // Adicionar variáveis ao obj oDocument
 			documento: "Passaporte"
 		};
-		instance_create_depth(320, 110, 0, oDocument, _docvars);
+		instance_create_layer(72, 186, "Instances", oDocument, _docvars);
 	break;
 	
 	default:

@@ -18,3 +18,11 @@ menuFunction = function(num) {
 };
 
 
+pcTexto = "";
+podeDigitar = 0;
+barDelay = FPS/2;
+barColor = 0;
+
+botoes = 0;
+botoesidx = 0;
+botoesPodeAperta = 1;

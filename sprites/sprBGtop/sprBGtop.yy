@@ -19,6 +19,7 @@
   "height":216,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"523bc08b-0564-4945-988b-070f7b29d46b","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"523bc08b-0564-4945-988b-070f7b29d46b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"a1be28e8-6f4b-49bb-90b3-452aa4b9b659","blendMode":0,"displayName":"default","isLocked":false,"name":"a1be28e8-6f4b-49bb-90b3-452aa4b9b659","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprBGtop",

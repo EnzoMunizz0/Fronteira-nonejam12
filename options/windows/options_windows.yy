@@ -10,7 +10,7 @@
   "option_windows_d3dswapeffectdiscard":false,
   "option_windows_description_info":"Você trabalha para a PEPT (Porto Espacial do Planeta Terra). O seu dever é analisar documentos de acordo com as regras da AGVI (Agência Galáctica de Viagens Interplanetárias). Qualquer irregularidade de documentos e passaportes de viajantes deve ser considerada e o mesmo deve ser reportado para o planeta de origem.",
   "option_windows_disable_sandbox":false,
-  "option_windows_display_cursor":true,
+  "option_windows_display_cursor":false,
   "option_windows_display_name":"Fronteira - Versão Nonejam 12",
   "option_windows_enable_steam":false,
   "option_windows_executable_name":"Fronteira.exe",

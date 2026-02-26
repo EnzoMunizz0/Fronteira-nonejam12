@@ -1,6 +1,9 @@
 
 
 
+
+
+
 /*if (instance_exists(oDocument)) {
 	var _doc = position_meeting(mouse_x, mouse_y, oDocument);
 	if (_doc) {
