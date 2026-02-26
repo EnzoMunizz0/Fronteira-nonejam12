@@ -11,7 +11,8 @@ function __InputConfigVerbs()
 		ROTLEFT,  // Rotate Left
         ACCEPT,
         CANCEL,
-		PAUSE
+		PAUSE,
+		TELACHEIA
     }
     
     enum INPUT_CLUSTER
@@ -27,6 +28,7 @@ function __InputConfigVerbs()
     InputDefineVerb(INPUT_VERB.RIGHT,   "right",      [vk_right, "D"],    [ gp_axislh, gp_padr]);
     InputDefineVerb(INPUT_VERB.ROTRIGHT,  "rotright",      "E",            gp_shoulderr);
     InputDefineVerb(INPUT_VERB.ROTLEFT, "rotleft",     "Q",            gp_shoulderl);
+    InputDefineVerb(INPUT_VERB.TELACHEIA, "telacheia",     vk_f11,            undefined);
     
     if (INPUT_ON_SWITCH)
     {
@@ -37,7 +39,7 @@ function __InputConfigVerbs()
     else
     {
     InputDefineVerb(INPUT_VERB.ACCEPT,   "accept",      [vk_enter, vk_space, "Z"],    gp_face1);
-    InputDefineVerb(INPUT_VERB.CANCEL,   "cancel",      [vk_escape, vk_escape, "X"],    gp_face2);
+    InputDefineVerb(INPUT_VERB.CANCEL,   "cancel",      [vk_escape, vk_backspace, "X"],    gp_face2);
     }
     
     /*if (INPUT_ON_PS5)

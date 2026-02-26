@@ -1,6 +1,6 @@
 
-var _centerx = 256/2;
-var _centery = 144/2;
+var _centerx = room_width/2;
+var _centery = room_height/2;
 
 
 switch room {
@@ -17,10 +17,10 @@ case StartMenuRoom:
 		startmenuitens[i].escala = lerp(startmenuitens[i].escala, 1+(smisel == i+1 ? .2 : 0), .25);
 	
 		draw_text_ext_transformed(
-			_centerx, _centery + (i*16),
+			_centerx, _centery + (i*32),
 			startmenuitens[i].nome,
 			16, 1000,
-			startmenuitens[i].escala*.4, startmenuitens[i].escala*.4, 0
+			startmenuitens[i].escala*1, startmenuitens[i].escala*1, 0
 		);
 	
 	}

@@ -10,8 +10,12 @@ global.cursorForma = "default";
 
 switch room {
 	
+	case SplashRoom:
+		nextRoom(StartMenuRoom);
+	break;
+	
 	case StartMenuRoom:
-		surface_resize(application_surface, 256*3, 144*3);
+		//surface_resize(application_surface, 256*3, 144*3);
 		instance_create_layer(x, y, "MenuItems", oUI);
 		
 		
