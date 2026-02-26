@@ -16,12 +16,12 @@ switch room {
 			documento: "Passaporte",
 			
 		};
-		instance_create_depth(117, 90, 0, oDocument, _docvars);
+		instance_create_depth(217, 90, 0, oDocument, _docvars);
 
 		_docvars = { // Adicionar variáveis ao obj oDocument
-			documento: "Identidade"
+			documento: "Passaporte"
 		};
-		instance_create_depth(220, 110, 0, oDocument, _docvars);
+		instance_create_depth(320, 110, 0, oDocument, _docvars);
 	break;
 	
 	default:

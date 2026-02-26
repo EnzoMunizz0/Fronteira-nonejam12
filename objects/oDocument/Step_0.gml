@@ -51,7 +51,7 @@ if (mouse_check_button_released(mb_left)) {
 x = (arrastando) ? lerp(x, mouse_x + mouseOffset[0], .35) : x;
 y = (arrastando) ? lerp(y, mouse_y + mouseOffset[1], .35) : y;
 
-size = .5+(arrastando*0.1)+(pequeno*0.5);
+size = 1+(arrastando*0.1)/*+(pequeno*0.5)*/;
 shsize = lerp(shsize, size+(arrastando*0.05), .25);
 shoffset = lerp(shoffset, shsize*arrastando, .25)
 
