@@ -10,6 +10,7 @@ function __InputConfigVerbs()
 		ROTRIGHT, // Rotate Right
 		ROTLEFT,  // Rotate Left
         ACCEPT,
+        ENTER,
         CANCEL,
 		PAUSE,
 		TELACHEIA
@@ -28,6 +29,7 @@ function __InputConfigVerbs()
     InputDefineVerb(INPUT_VERB.RIGHT,   "right",      [vk_right, "D"],    [ gp_axislh, gp_padr]);
     InputDefineVerb(INPUT_VERB.ROTRIGHT,  "rotright",      "E",            gp_shoulderr);
     InputDefineVerb(INPUT_VERB.ROTLEFT, "rotleft",     "Q",            gp_shoulderl);
+    InputDefineVerb(INPUT_VERB.ENTER, "enter",     vk_enter,            gp_face1);
     InputDefineVerb(INPUT_VERB.TELACHEIA, "telacheia",     vk_f11,            undefined);
     
     if (INPUT_ON_SWITCH)

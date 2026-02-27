@@ -14,6 +14,27 @@ botoes = 0;
 botoesidx = 0;
 botoesPodeAperta = 1;
 
+verPPsprite = sprTexBlack;	// PP = Procurado PCU
+verNAsprite = sprTexBlack;	// NA = Nacionalidade Aceita
+verificacao = function(_name = "") {
+	//verPPalpha = 1;
+	//verNAalpha = 1;
+	
+	verPPsprite = sprBGinterrogacao;
+	verNAsprite = sprBGinterrogacao;
+	
+	var _tam = array_length(global.aliens);
+	for (var i = 0; i < _tam; i++) {
+		//if (i >= _tam) continue;
+		if (_name != global.aliens[i].nome) {
+			continue;
+		}
+		verPPsprite = (global.aliens[i].pcu) ? sprBGv : sprBGx;
+		verNAsprite = sprBGv;
+	}
+	
+}
+
 
 //Menu de Opções
 inOptions = 0;
@@ -45,6 +66,7 @@ startmenuitens = [
 ];
 // smisel = start menu item selected
 smisel = 0;
+podeaperta = 1;
 
 
 menuFunction = function(num) {

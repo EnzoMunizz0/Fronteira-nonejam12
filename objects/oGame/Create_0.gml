@@ -9,6 +9,7 @@ global.cursorForma = "default";
 
 
 
+irandom(randomise());
 
 
 switch room {
@@ -28,7 +29,7 @@ switch room {
 	
 	case GameRoom:
 		instance_create_layer(0, 0, "UI", oUI);
-		var _docvars = { // Adicionar variáveis ao obj oDocument
+		/*var _docvars = { // Adicionar variáveis ao obj oDocument
 			documento: "Passaporte",
 			
 		};
@@ -37,7 +38,7 @@ switch room {
 		_docvars = { // Adicionar variáveis ao obj oDocument
 			documento: "Passaporte"
 		};
-		instance_create_layer(72, 186, "Instances", oDocument, _docvars);
+		instance_create_layer(72, 186, "Instances", oDocument, _docvars);*/
 	break;
 	
 	default:

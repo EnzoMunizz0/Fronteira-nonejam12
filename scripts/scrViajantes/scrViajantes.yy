@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrViajantes",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrViajantes",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

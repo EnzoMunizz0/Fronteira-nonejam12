@@ -62,6 +62,9 @@ case GameRoom:
 	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14)
 	draw_sprite(sprButoes, botoesidx+(mouse_check_button(mb_left)*2*_bots)*botoesPodeAperta, 90, 32)
 	
+	draw_sprite_ext(verPPsprite, -1, 279, 36, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(verNAsprite, -1, 291, 51, 1, 1, 0, c_white, 1);
+	
 break;
 
 case OptionsMenuRoom:
