@@ -22,7 +22,7 @@ case GameRoom:
 		1
 	);
 	var _finalText = [223+(6*string_length(pcTexto))+1, 18]
-	draw_set_colour(merge_colour(#E0D9D9, #1A080E, podeDigitar * barColor))
+	draw_set_colour(merge_colour(merge_colour(#E0D9D9, #DDCAC3, _camp), #1A080E, podeDigitar * barColor))
 	draw_rectangle(
 		_finalText[0], _finalText[1], 
 		_finalText[0]+1, _finalText[1]+6, 

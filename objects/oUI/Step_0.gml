@@ -28,9 +28,21 @@ break;
 
 
 case GameRoom:
+	// Aba de pesquisa - computador
 	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25);
+	// Relógio
 	var _relg = point_in_circle(mouse_x, mouse_y, 38, 35, 16)
+	// Botões da alavanca
 	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14)
+	
+	if (_relg) global.cursorForma = "Time";
+	botoesidx = 0;
+	if (_bots) {
+		global.cursorForma = "Point";
+		botoesidx = (mouse_y<=38) ? 1 : 2;
+	}
+	
+	// COMPUTADOR - Pesquisa de nomes
 	if (mouse_check_button_pressed(mb_left) || InputPressed(INPUT_VERB.ENTER)) podeDigitar = 0;
 	if (_camp) {
 		//window_set_cursor(cr_beam);
@@ -41,13 +53,6 @@ case GameRoom:
 			podeDigitar = 1;
 		}
 	}
-	if (_relg) global.cursorForma = "Time";
-	botoesidx = 0;
-	if (_bots) {
-		global.cursorForma = "Point";
-		botoesidx = (mouse_y<=38) ? 1 : 2;
-	}
-	
 	if (podeDigitar) {
 		pcTexto = keyboard_string;
 		if (barDelay <= 0) {

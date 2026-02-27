@@ -5,28 +5,24 @@ gotoOptions = function() {};
 
 
 //Gameplay
+botoes = 0; // Botões alavanca
+botoesidx = 0;
+botoesPodeAperta = 1;
+
 pcTexto = "";
 podeDigitar = 0;
 barDelay = FPS/2;
 barColor = 0;
 
-botoes = 0;
-botoesidx = 0;
-botoesPodeAperta = 1;
-
 verPPsprite = sprTexBlack;	// PP = Procurado PCU
 verNAsprite = sprTexBlack;	// NA = Nacionalidade Aceita
-verificacao = function(_name = "") {
-	//verPPalpha = 1;
-	//verNAalpha = 1;
-	
+verificacao = function(_name = "") { // Verificação de nomes existentes - computador
 	verPPsprite = sprBGinterrogacao;
 	verNAsprite = sprBGinterrogacao;
 	
 	var _tam = array_length(global.aliens);
 	for (var i = 0; i < _tam; i++) {
-		//if (i >= _tam) continue;
-		if (_name != global.aliens[i].nome) {
+		if (string_upper(_name) != string_upper(global.aliens[i].nome)) {
 			continue;
 		}
 		verPPsprite = (global.aliens[i].pcu) ? sprBGv : sprBGx;
