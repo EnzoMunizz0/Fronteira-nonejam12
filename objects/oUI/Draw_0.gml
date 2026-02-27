@@ -1,6 +1,8 @@
 
-var _centerx = room_width/2;
+var _centerx = 384/2;
 var _centery = room_height/2;
+
+var _centerOp = 384*2
 
 
 switch room {
@@ -8,11 +10,11 @@ switch room {
 
 case StartMenuRoom:
 
-
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_colour(#E0D9D9);
-
+	
+	//MENU DO COMEÇO
 	for (var i=0; i<array_length(startmenuitens); i++) {
 	
 		startmenuitens[i].escala = lerp(startmenuitens[i].escala, 1+(smisel == i+1 ? .2 : 0), .25);
@@ -27,7 +29,28 @@ case StartMenuRoom:
 		);
 	
 	}
-	draw_set_colour(c_white);
+	
+	//MENU DE OPÇÕES
+	
+	var _bck = point_in_rectangle(mouse_x, mouse_y, 11, 12, 35, 18)
+	//draw_rectangle(11, 12, 35, 18, 1);
+	//draw_set_alpha(.8+(!_bck*.2))
+	draw_set_colour(merge_colour(#E0D9D9, #DDCAC3, _bck));
+	draw_text_transformed(
+		_centerOp + 24, 15,
+		"Back", 
+		.5*(bckSize), .5*bckSize, 0
+	)
+	//draw_set_alpha(1)
+	draw_set_colour(#E0D9D9);
+	
+	draw_text_transformed(
+		_centerOp + 200, 200,
+		"X: "+string(mouse_x)+"  - Y: "+string(mouse_y), 
+		.5, .5, 0
+	)
+	
+	draw_set_colour(c_white)
 
 
 break;

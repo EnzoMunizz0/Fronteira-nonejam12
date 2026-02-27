@@ -1,7 +1,10 @@
 
 
-global.cursorForma = "default";
+transicaoAlpha = 1;
+inTrasicao = 0;
+transIf = noone;
 
+global.cursorForma = "default";
 
 
 
@@ -18,7 +21,8 @@ switch room {
 	case StartMenuRoom:
 		//surface_resize(application_surface, 256*3, 144*3);
 		instance_create_layer(x, y, "MenuItems", oUI);
-		
+		instance_create_layer(384/2, (room_height/2)-2, "MenuItems", oCam);
+		global.musica = global.songs.Menu;
 		
 	break;
 	
