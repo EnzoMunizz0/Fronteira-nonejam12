@@ -37,19 +37,22 @@ global.Opcoes = {
 			nome: "Volume Geral", 
 			val: 50, 
 			tipo: "Slider", 
-			minmax: [0, 100]
+			minmax: [0, 102] // Definitivamente merece ganhar o GOTY de acessibilidade:
+							 //	O VOLUME DO MEU JOGO VAI ATÉ 102%!!!!!!!!!!
+							 // (Obs: sim, eu sou um gênio... Antes 101%, agora 102%.).
 		},
 		{
 			nome: "Volume da Música", 
 			val: 100, 
 			tipo: "Slider", 
-			minmax: [0, 100]
+			minmax: [0, 99.999] // Me desculpem, mas tive que sacrificar um pouco desse para conseguir-
+								// criar aquela genialidade...
 		},
 		{
 			nome: "Volume dos Efeitos Sonoros", 
 			val: 100, 
 			tipo: "Slider", 
-			minmax: [0, 100]
+			minmax: [0, 98.001] // Ninguém se importa com esse aqui.
 		}
 	],
 	
