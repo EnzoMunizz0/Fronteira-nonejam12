@@ -1,5 +1,6 @@
 
-draw_set_colour(#1A080E)
+
+draw_set_colour(#100F19)
 draw_set_alpha(transicaoAlpha)
 draw_rectangle(-10, -10, 394, 226, 0);
 

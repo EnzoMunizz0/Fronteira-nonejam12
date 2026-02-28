@@ -2,27 +2,16 @@
 
 stepOptions();
 
-if (global.musica != 0) {
-	if (!global.temMus) {
-		audio_play_sound(
-			global.musica.mus, 
-			10, 
-			global.musica.loop, 
-			global.musica.vol * (global.volGeral * global.volMusica)
-		)
-	}
-	
-	global.temMus = 1;
-}
+step_musica();
 
 
 if (inTrasicao) {
-	transicaoAlpha += .05;
+	transicaoAlpha += .02;
 	if (transicaoAlpha >= 1) {
 		nextRoom(transIf, 0);
 	}
 } else {
-	transicaoAlpha = lerp(transicaoAlpha, inTrasicao, .1);
+	transicaoAlpha = lerp(transicaoAlpha, inTrasicao, .01);
 }
 
 /*if (instance_exists(oDocument)) {

@@ -1,0 +1,27 @@
+Essas são as músicas do jogo (versões antigas, novas e descartadas).
+Você pode remixar, editar, usar, qualquer coisa;
+Mas caso você poste essa música publicamente, peço que me dê os créditos (EnzoMunizz0).
+(Para os créditos pode ser só o meu nick mesmo)
+
+- COMO EDITAR OS ARQUIVOS FLP -
+
+	1. Baixe o FL Studio na versão correta (é de graça para usar, mas se quiser salvar o projeto, terá que pagar);
+	   (Mesmo com o FL Studio grátis você poderá abrir arquivos).
+	   VERSÃO DO FL STUDIO: v25.1.6 [build 4997]
+		(Eu acredito que não dê para abrir com versões anteriores, já que eu usei plugins nativos que foram adicionados recentemente)
+		(Exemplo: Kleper EXO)
+	2. Baixe os seguintes plugins:
+		- Magical 8bit Plug (Grátis):
+			https://ymck.net/app/magical-8bit-plug-en
+		- SGM-v2.01-NicePianosGuitarsBass-V1.2 (Grátis - Soundfont)
+			https://musical-artifacts.com/artifacts/855
+
+		- Kontakt 7 (Pago)
+		- Robot Dog Drums - Rock (Pago)
+			https://robotdogdrums.com/products/robot-dog-drums-rock
+	Infelizmente a música original usa plugins pagos, mas eu disponibilizei as versões grátis (não original) de cada projeto.
+	(abra elas caso não queira pagar por plugins)
+
+	3. Abra no FL Studio e seja feliz.
+
+Eu não utiliz

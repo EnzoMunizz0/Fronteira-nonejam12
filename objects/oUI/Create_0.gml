@@ -1,7 +1,5 @@
 
-gotoOptions = function() {};
-
-
+menuFunction = 0;
 
 
 //Gameplay
@@ -37,41 +35,66 @@ verificacao = function(_name = "") { // Verificação de nomes existentes - comp
 }
 
 
-//Menu de Opções
-inOptions = 0;
-optionsPos = 960
-bckSize = 1;
+//Menu Inicial
+optionsPos = 960	// Options Position
+defaultCamPos = [384/2, 540]
+bckSize = 1;		// Tamanho do botão de voltar
 
-gotoOptions = function() {
-	show_debug_message(inOptions)
+menuComeco = function() {
+	smisel += InputPressed(INPUT_VERB.DOWN) - InputPressed(INPUT_VERB.UP);
+	smisel = clamp(smisel, 1, array_length(startmenuitens));
 	
-	/*
-	if (inOptions) {
-		if (instance_exists(oCam)) 
-	}*/
-	inOptions = !inOptions
-	if (instance_exists(oCam)) oCam.finalposx = (inOptions) ? optionsPos : 384/2;
+	if (InputPressed(INPUT_VERB.ACCEPT)) menuFunction = startmenuitens[smisel-1].menu;
+}
+
+menuOpcoes = function() {
+	if (instance_exists(oCam)) oCam.finalposx = optionsPos;
 	
-	show_debug_message(oCam.x)
+	var _ctrOp = 384*2;
+	var _bck = point_in_rectangle(mouse_x, mouse_y, _ctrOp+12, 13+432, _ctrOp+36, 19+432);
+	//bckSize = lerp(bckSize, 1+(_bck*.1), .25);
+	if (_bck) global.cursorForma = "Point";
+	if ((mouse_check_button_pressed(mb_left) && _bck) or InputPressed(INPUT_VERB.CANCEL)) {
+		smisel = 2;
+		if (instance_exists(oCam)) oCam.finalposx = defaultCamPos[0];
+		menuFunction = menuComeco;
+	}
+}
+
+menuLoadGame = function() {
+	if (instance_exists(oCam)) oCam.finalposy = 108;
+	
+	smisel += InputPressed(INPUT_VERB.DOWN) - InputPressed(INPUT_VERB.UP);
+	smisel = clamp(smisel, 1, 5);
+	
+	var _bck = point_in_rectangle(mouse_x, mouse_y, 11, 12, 35, 18);
+	//bckSize = lerp(bckSize, 1+(_bck*.1), .25);
+	if (_bck) global.cursorForma = "Point";
+	if ((mouse_check_button_pressed(mb_left) && _bck) or InputPressed(INPUT_VERB.CANCEL)) {
+		smisel = 1;
+		if (instance_exists(oCam)) oCam.finalposy = defaultCamPos[1];
+		menuFunction = menuComeco;
+	}
+	if (InputPressed(INPUT_VERB.ACCEPT)) menuFunction = menuEntrandoJogo;
+	
+}
+menuEntrandoJogo = function() {
+	nextRoom(GameRoom);
+}
+menuSair = function() {
+	game_end();
 }
 
 
-//Menu Inicial
 startmenuitens = [
 	// A "funcao" deve-se colocar a função que irá executar SEM PARÊNTESES ( );
-	// O "fvar" é o valor que você vai colocar na variável local da função...
-	// Exemplo: "funcao: show_message, fvar: 123", irá mostrar a mensagem "123" na tela;
-	{nome: "Começar", escala: 1, funcao: nextRoom, fvar: GameRoom},
-	{nome: "Opções", escala: 1, funcao: gotoOptions, fvar: noone},
-	{nome: "Sair", escala: 1, funcao: game_end, fvar: noone} // Não preciso colocar nenhum valor na função "game_end()"
+	{nome: "Começar", menu: menuLoadGame, escala: 1},
+	{nome: "Opções", menu: menuOpcoes, escala: 1},
+	{nome: "Sair", menu: menuSair, escala: 1}
 ];
 // smisel = start menu item selected
 smisel = 0;
 podeaperta = 1;
 
-
-menuFunction = function(num) {
-	var _itn = startmenuitens[num-1];
-	_itn.funcao(_itn.fvar);
-};
+menuFunction = menuComeco;
 

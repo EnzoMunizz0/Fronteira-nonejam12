@@ -422,6 +422,7 @@
     {"id":{"name":"scrViajantes","path":"scripts/scrViajantes/scrViajantes.yy",},},
     {"id":{"name":"seTransIn","path":"sequences/seTransIn/seTransIn.yy",},},
     {"id":{"name":"seTransOut","path":"sequences/seTransOut/seTransOut.yy",},},
+    {"id":{"name":"sndMetronome","path":"sounds/sndMetronome/sndMetronome.yy",},},
     {"id":{"name":"sngStartMeenu","path":"sounds/sngStartMeenu/sngStartMeenu.yy",},},
     {"id":{"name":"ElesEstaoDeOlhoEmNos","path":"sprites/ElesEstaoDeOlhoEmNos/ElesEstaoDeOlhoEmNos.yy",},},
     {"id":{"name":"sprAlienAlfredo","path":"sprites/sprAlienAlfredo/sprAlienAlfredo.yy",},},

@@ -23,7 +23,8 @@ switch room {
 		//surface_resize(application_surface, 256*3, 144*3);
 		instance_create_layer(x, y, "MenuItems", oUI);
 		instance_create_layer(384/2, (room_height/2)-2, "MenuItems", oCam);
-		global.musica = global.songs.Menu;
+		create_musica()
+		//global.musica = global.songs.Menu;
 		
 	break;
 	

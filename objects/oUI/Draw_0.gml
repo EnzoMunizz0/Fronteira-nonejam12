@@ -1,6 +1,6 @@
 
 var _centerx = 384/2;
-var _centery = room_height/2;
+var _centery = (216/2)+432;
 
 var _centerOp = 384*2
 
@@ -17,10 +17,10 @@ case StartMenuRoom:
 	//MENU DO COMEÇO
 	for (var i=0; i<array_length(startmenuitens); i++) {
 	
-		startmenuitens[i].escala = lerp(startmenuitens[i].escala, 1+(smisel == i+1 ? .2 : 0), .25);
+		startmenuitens[i].escala = lerp(startmenuitens[i].escala, .8+(smisel == i+1 ? .2 : 0), .25);
 		
 		
-		draw_set_colour(merge_colour(#DDCAC3, #E0D9D9, i+1 == smisel));
+		draw_set_colour(merge_colour(#543246, #E0D9D9, i+1 == smisel));
 		draw_text_ext_transformed(
 			_centerx, _centery + (i*32),
 			startmenuitens[i].nome,
@@ -30,14 +30,42 @@ case StartMenuRoom:
 	
 	}
 	
-	//MENU DE OPÇÕES
+	//MENU DE LOAD GAME
 	
 	var _bck = point_in_rectangle(mouse_x, mouse_y, 11, 12, 35, 18)
 	//draw_rectangle(11, 12, 35, 18, 1);
 	//draw_set_alpha(.8+(!_bck*.2))
 	draw_set_colour(merge_colour(#E0D9D9, #DDCAC3, _bck));
 	draw_text_transformed(
-		_centerOp + 24, 15,
+		24, 15,
+		"Back", 
+		.5*(bckSize), .5*bckSize, 0
+	)
+	
+	for (var i=0; i<5; i++) {
+	
+		//startmenuitens[i].escala = lerp(startmenuitens[i].escala, 1+(smisel == i+1 ? .2 : 0), .25);
+		
+		
+		//draw_set_colour(merge_colour(#DDCAC3, #E0D9D9, i+1 == smisel));
+		draw_set_colour(merge_colour(#543246, #E0D9D9, i+1 == smisel));
+		draw_text_ext_transformed(
+			_centerx, 30 + (i*37),
+			"Novo jogo",
+			16, 1000,
+			1, 1, 0
+		);
+	
+	}
+	
+	//MENU DE OPÇÕES
+	
+	var _bck = point_in_rectangle(mouse_x, mouse_y, 12+_centerOp, 13+432, 36+_centerOp, 19+432);
+	//draw_rectangle(11, 12, 35, 18, 1);
+	//draw_set_alpha(.8+(!_bck*.2))
+	draw_set_colour(merge_colour(#E0D9D9, #DDCAC3, _bck));
+	draw_text_transformed(
+		_centerOp + 24, 15+432,
 		"Back", 
 		.5*(bckSize), .5*bckSize, 0
 	)
@@ -45,7 +73,7 @@ case StartMenuRoom:
 	draw_set_colour(#E0D9D9);
 	
 	draw_text_transformed(
-		_centerOp + 200, 200,
+		_centerOp + 200, 200+432,
 		"X: "+string(mouse_x)+"  - Y: "+string(mouse_y), 
 		.5, .5, 0
 	)
