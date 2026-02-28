@@ -20,9 +20,14 @@ verificacao = function(_name = "") { // Verificação de nomes existentes - comp
 	verPPsprite = sprBGinterrogacao;
 	verNAsprite = sprBGinterrogacao;
 	
+	if (pcTexto == "") {
+		verPPsprite = sprTexBlack;
+		verNAsprite = sprTexBlack;
+	}
+	
 	var _tam = array_length(global.aliens);
 	for (var i = 0; i < _tam; i++) {
-		if (string_upper(_name) != string_upper(global.aliens[i].nome)) {
+		if (string_upper(_name) != string_upper(global.aliens[i].ip)) {
 			continue;
 		}
 		verPPsprite = (global.aliens[i].pcu) ? sprBGv : sprBGx;

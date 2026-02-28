@@ -19,16 +19,15 @@ global.aliens = [
 		docs: [
 			{
 				tipo: "Passaporte", 
-				val: "12/30/78",
-				ip: 720138
+				val: "12/30/78"
 			},
 			{
 				tipo: "Passaporte", 
-				val: "03/09/09",
-				ip: 123457
+				val: "03/09/09"
 			}
 		],
 		nc: global.planetas[7],
+		ip: "b7o29",
 		pcu: 0
 		
 	}

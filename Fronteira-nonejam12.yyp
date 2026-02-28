@@ -91,6 +91,7 @@
   },
   "name":"Fronteira-nonejam12",
   "resources":[
+    {"id":{"name":"fPixelDoc","path":"fonts/fPixelDoc/fPixelDoc.yy",},},
     {"id":{"name":"fPixelRegular","path":"fonts/fPixelRegular/fPixelRegular.yy",},},
     {"id":{"name":"__InputUpdateController","path":"objects/__InputUpdateController/__InputUpdateController.yy",},},
     {"id":{"name":"oCam","path":"objects/oCam/oCam.yy",},},
@@ -453,6 +454,7 @@
     {"id":{"name":"sprPassaporteGrandeTemp","path":"sprites/sprPassaporteGrandeTemp/sprPassaporteGrandeTemp.yy",},},
     {"id":{"name":"sprPassaportePequeno","path":"sprites/sprPassaportePequeno/sprPassaportePequeno.yy",},},
     {"id":{"name":"sprPassaportePequenoTemp","path":"sprites/sprPassaportePequenoTemp/sprPassaportePequenoTemp.yy",},},
+    {"id":{"name":"sprPassaporteReferencia","path":"sprites/sprPassaporteReferencia/sprPassaporteReferencia.yy",},},
     {"id":{"name":"sprPortao","path":"sprites/sprPortao/sprPortao.yy",},},
     {"id":{"name":"sprSetaRelogio","path":"sprites/sprSetaRelogio/sprSetaRelogio.yy",},},
     {"id":{"name":"sprTempCima","path":"sprites/sprTempCima/sprTempCima.yy",},},

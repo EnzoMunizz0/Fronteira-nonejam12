@@ -19,7 +19,7 @@ shoffset = 0; // deslocamento da sombra
 image_xscale = 0
 image_yscale = 0
 
-pequeno = 0; // se o objeto está pequeno ou não
+pequeno = 1; // se o objeto está pequeno ou não
 cai = 0; // vai ativar a gravidade do objeto
 
 grv = .15; // cálculo para gravidade do objeto

@@ -35,7 +35,7 @@ entregar_docs = function(_quant = 1) {
 }
 
 estado_chegou = function() {
-	if (!chegou) entregar_docs(1);
+	if (!chegou) entregar_docs(3);
 	chegou = 1;
 }
 

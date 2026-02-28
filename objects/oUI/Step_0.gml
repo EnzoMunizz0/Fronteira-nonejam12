@@ -11,15 +11,18 @@ case StartMenuRoom:
 	
 		if (InputPressed(INPUT_VERB.ACCEPT)) {
 			menuFunction(smisel);
-			if (smisel = 1) podeaperta = 0;
+			/*if (smisel = 1) */podeaperta = 0;
 		}
+	}
 	
-		var _ctrOp = 384*2;
-		var _bck = point_in_rectangle(mouse_x, mouse_y, _ctrOp+11, 12, _ctrOp+35, 18);
-		bckSize = lerp(bckSize, 1+(_bck*.1), .25);
-		if (_bck) {
-			global.cursorForma = "Point";
-			if (mouse_check_button_pressed(mb_left)) gotoOptions();
+	var _ctrOp = 384*2;
+	var _bck = point_in_rectangle(mouse_x, mouse_y, _ctrOp+11, 12, _ctrOp+35, 18);
+	bckSize = lerp(bckSize, 1+(_bck*.1), .25);
+	if (_bck) {
+		global.cursorForma = "Point";
+		if (mouse_check_button_pressed(mb_left)) {
+			gotoOptions();
+			podeaperta = 1;
 		}
 	}
 

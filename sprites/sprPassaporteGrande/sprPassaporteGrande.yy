@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":107,
   "bbox_left":0,
-  "bbox_right":67,
+  "bbox_right":71,
   "bbox_top":0,
   "collisionKind":0,
   "collisionTolerance":0,
@@ -12,14 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"c07557f2-a9bc-48b4-bbfb-bd5e31d66864","name":"c07557f2-a9bc-48b4-bbfb-bd5e31d66864","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a6a072e1-733a-4772-a1bf-ee6fe316ca9d","name":"a6a072e1-733a-4772-a1bf-ee6fe316ca9d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":108,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a1c154ec-2fa1-4df1-8840-18ae7c2ad1f7","blendMode":0,"displayName":"default","isLocked":false,"name":"a1c154ec-2fa1-4df1-8840-18ae7c2ad1f7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e87920e3-62a5-4933-8008-36254f5f1b2e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"e87920e3-62a5-4933-8008-36254f5f1b2e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"7962f76d-e35c-469e-9b72-01e695c3c173","blendMode":0,"displayName":"default","isLocked":false,"name":"7962f76d-e35c-469e-9b72-01e695c3c173","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprPassaporteGrande",
   "nineSlice":null,
@@ -69,13 +70,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c07557f2-a9bc-48b4-bbfb-bd5e31d66864","path":"sprites/sprPassaporteGrande/sprPassaporteGrande.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"915bb56f-860c-4df7-b81d-05a016188e65","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a6a072e1-733a-4772-a1bf-ee6fe316ca9d","path":"sprites/sprPassaporteGrande/sprPassaporteGrande.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"575815d3-947e-45bd-95c1-6b2738f861e7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":34,
+    "xorigin":36,
     "yorigin":54,
   },
   "swatchColours":null,
@@ -86,5 +87,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":68,
+  "width":72,
 }
