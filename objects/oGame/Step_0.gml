@@ -14,6 +14,13 @@ if (inTrasicao) {
 	transicaoAlpha = lerp(transicaoAlpha, inTrasicao, .01);
 }
 
+	
+if (InputPressed(INPUT_VERB.LUZNEGRA) && room == GameRoom) {
+	luznegra = !luznegra;
+	global.mouseTrancado = !global.mouseTrancado;
+}
+
+
 /*if (instance_exists(oDocument)) {
 	var _doc = position_meeting(mouse_x, mouse_y, oDocument);
 	if (_doc) {
@@ -27,7 +34,8 @@ if (inTrasicao) {
 	}
 }*/
 
-
+global.volMusica += keyboard_check_pressed(vk_add);
+global.volMusica -= keyboard_check_pressed(vk_subtract);
 
 
 

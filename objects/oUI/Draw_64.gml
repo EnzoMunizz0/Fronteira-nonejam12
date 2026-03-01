@@ -6,7 +6,7 @@ switch room {
 case GameRoom:
 	
 
-	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25);
+	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25) && !global.mouseTrancado;
 	//draw_sprite_ext(sprCampoDigitacao, -1, room_width, 0, 1, 1, 0, #DDCAC3, .5 * _camp)
 	var _col = merge_colour(#E0D9D9, #DDCAC3, _camp)
 	draw_rectangle_colour(222, 17, 349, 25, _col, _col, _col, _col, 0)

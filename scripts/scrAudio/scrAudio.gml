@@ -3,6 +3,9 @@ global.musicaDados = 0;
 global.musica = 0;
 global.temMus = 0;
 
+global.fadeVol = 1;
+global.lerpVol = 1;
+
 global.musTam = 0;
 global.musPos = 0;
 global.musBatidas = 0;
@@ -22,13 +25,14 @@ global.songs = {
 
 function create_musica() {
 	global.musicaDados = global.songs.Menu;
+	global.fadeVol = 1;
 	//global.musTam = audio_sound_length(global.musica.mus);
 }
 
 function begin_step_beat() {
 	if (global.musicaDados != 0) {
 		global.musPos = audio_sound_get_track_position(global.musica);
-		show_debug_message(global.musPos);
+		//show_debug_message(global.musPos);
 		
 		// Tem que dividir 60 pois eu estou contando os segundos, não o fps
 		global.beat = floor(global.musPos / (60 / global.musicaDados.bpm) / .1) * .1; 
@@ -43,7 +47,7 @@ function step_musica() {
 				global.musicaDados.mus, 
 				10, 
 				global.musicaDados.loop, 
-				global.musicaDados.vol * (global.volGeral * global.volMusica)
+				global.musicaDados.vol * (global.volGeral * global.volMusica) * global.fadeVol
 			);
 			global.musTam = audio_sound_length(global.musica)
 			global.musBatidas = floor(global.musTam / (60/global.musicaDados.bpm))
@@ -54,6 +58,7 @@ function step_musica() {
 		
 		if (global.prevBeat != global.beat) on_beat();
 		
+		global.fadeVol = lerp(global.fadeVol, global.lerpVol, .15);
 	}
 }
 

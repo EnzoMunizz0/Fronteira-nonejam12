@@ -7,6 +7,8 @@ function __InputConfigVerbs()
         DOWN,
         LEFT,
         RIGHT,
+		RESET,
+        LUZNEGRA,
 		ROTRIGHT, // Rotate Right
 		ROTLEFT,  // Rotate Left
         ACCEPT,
@@ -27,6 +29,8 @@ function __InputConfigVerbs()
     InputDefineVerb(INPUT_VERB.DOWN,    "down",       [vk_down,  "S"],    [ gp_axislv, gp_padd]);
     InputDefineVerb(INPUT_VERB.LEFT,    "left",       [vk_left,  "A"],    [-gp_axislh, gp_padl]);
     InputDefineVerb(INPUT_VERB.RIGHT,   "right",      [vk_right, "D"],    [ gp_axislh, gp_padr]);
+    InputDefineVerb(INPUT_VERB.RESET,  "reset",      "R",            gp_face3);
+    InputDefineVerb(INPUT_VERB.LUZNEGRA,  "luznegra",      "F",            gp_face4);
     InputDefineVerb(INPUT_VERB.ROTRIGHT,  "rotright",      "E",            gp_shoulderr);
     InputDefineVerb(INPUT_VERB.ROTLEFT, "rotleft",     "Q",            gp_shoulderl);
     InputDefineVerb(INPUT_VERB.ENTER, "enter",     vk_enter,            gp_face1);

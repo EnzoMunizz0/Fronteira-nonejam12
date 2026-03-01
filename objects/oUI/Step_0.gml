@@ -12,11 +12,11 @@ break;
 
 case GameRoom:
 	// Aba de pesquisa - computador
-	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25);
+	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25) && !global.mouseTrancado;
 	// Relógio
-	var _relg = point_in_circle(mouse_x, mouse_y, 38, 35, 16)
+	var _relg = point_in_circle(mouse_x, mouse_y, 38, 35, 16);
 	// Botões da alavanca
-	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14)
+	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14) && !global.mouseTrancado;
 	
 	if (_relg) global.cursorForma = "Time";
 	botoesidx = 0;

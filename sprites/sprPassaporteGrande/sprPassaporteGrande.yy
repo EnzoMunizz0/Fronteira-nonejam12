@@ -20,14 +20,15 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"e87920e3-62a5-4933-8008-36254f5f1b2e","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"e87920e3-62a5-4933-8008-36254f5f1b2e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
+    {"$GMImageLayer":"","%Name":"aa6a4fed-8bc8-411c-811b-cd70371af0a5","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"aa6a4fed-8bc8-411c-811b-cd70371af0a5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"7962f76d-e35c-469e-9b72-01e695c3c173","blendMode":0,"displayName":"default","isLocked":false,"name":"7962f76d-e35c-469e-9b72-01e695c3c173","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sprPassaporteGrande",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Documentos",
-    "path":"folders/Sprites/Documentos.yy",
+    "name":"Passaporte",
+    "path":"folders/Sprites/Documentos/Passaporte.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

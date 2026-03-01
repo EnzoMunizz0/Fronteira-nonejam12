@@ -87,7 +87,7 @@ case GameRoom:
 	
 	draw_sprite_ext(sprSetaRelogio, -1, 38.5, 35, .5, .5, global.tempo/-1, c_white, 1);
 	
-	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14)
+	var _bots = point_in_rectangle(mouse_x, mouse_y, 90, 32, 90+7, 32+14) && !global.mouseTrancado;
 	draw_sprite(sprButoes, botoesidx+(mouse_check_button(mb_left)*2*_bots)*botoesPodeAperta, 90, 32)
 	
 	draw_sprite_ext(verPPsprite, -1, 279, 36, 1, 1, 0, c_white, 1);

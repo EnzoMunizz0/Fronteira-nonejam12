@@ -1,11 +1,12 @@
 
 
+luznegra = 0;
+
 transicaoAlpha = 1;
 inTrasicao = 0;
 transIf = noone;
 
 global.cursorForma = "default";
-
 
 
 

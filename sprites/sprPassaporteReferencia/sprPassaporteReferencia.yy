@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Documentos",
-    "path":"folders/Sprites/Documentos.yy",
+    "name":"Passaporte",
+    "path":"folders/Sprites/Documentos/Passaporte.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

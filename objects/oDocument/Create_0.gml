@@ -26,6 +26,37 @@ grv = .15; // cálculo para gravidade do objeto
 yspd = 0; // cálculo para a aceleração da gravidade do objeto
 
 
+vistous = 0;
+vistoun = 0;
+vistopos = [0, 0, 0, 0];
+vistoposoffset = [0, 0, 0, 0]
+qualvisto = 0;
+
+/*dadosInsp = {
+	imagem: [x-28, y-46, x-11, y-23],
+	ident: [x-28, y-46, x-11, y-23],
+	nc: [x-28, y-46, x-11, y-23],
+	ip: [x-28, y-46, x-11, y-23],
+	val: [x-28, y-46, x-11, y-23]
+}
+selDado = [0, 0, 0, 0, 0];*/
+/*selIm = 0;
+selId = 0;
+selNc = 0;
+selIp = 0;
+selVa = 0;
+
+sprIm = 0;
+sprId = 0;
+sprNc = 0;
+sprIp = 0;
+sprVa = 0;*/
+
+sumiu = 0;
+pode_sumir = function() {
+	size = 0;
+	sumiu = 1;
+}
 
 var _spr = asset_get_index("spr"+string(documento)+"Pequeno");
 if (sprite_exists(_spr)) sprite_index = _spr;
