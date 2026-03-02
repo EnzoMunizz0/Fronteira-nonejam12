@@ -2,6 +2,21 @@
 
 switch room {
 
+case StartMenuRoom:
+	
+	draw_set_alpha(splashBGAlpha);
+	draw_rectangle_colour(-10, -10, room_width, room_height, #100F19, #100F19, #100F19, #100F19, 0);
+	
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle)
+	draw_set_alpha(textsplashAlpha);
+	draw_set_colour(#E0D9D9);
+	draw_text_ext_transformed(384/2, 206/2, textsplash, 24, 10000, 1, 1, 0);
+	
+	draw_set_colour(c_white);
+	draw_set_alpha(1);
+	
+break;
 
 case GameRoom:
 	

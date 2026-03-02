@@ -29,6 +29,11 @@ switch room {
 		
 	break;
 	
+	case HistoryRoom:
+		instance_create_layer(x, y, "MenuItems", oUI);
+		instance_create_layer(384/2, (216/2)-2, "MenuItems", oCam);
+	break;
+	
 	case GameRoom:
 		instance_create_layer(0, 0, "UI", oUI);
 		/*var _docvars = { // Adicionar variáveis ao obj oDocument

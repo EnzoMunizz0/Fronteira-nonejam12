@@ -83,6 +83,23 @@ case StartMenuRoom:
 
 break;
 
+case HistoryRoom:
+	
+	for (var i = 0; i < 3; i++;) {
+		draw_rectangle_colour(2, 20+(i*216), 381, 135+(i*216), #3d203b, #3d203b, #3d203b, #3d203b, 0);
+		draw_sprite_ext(sprHistoria, i, 384/2, 20+(i*216), 1, 1, 0, c_white, 1);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_top);
+		draw_set_colour(#E0D9D9);
+		draw_set_alpha(alphatexthist);
+		draw_text_ext_transformed(384/2, 148+(i*216), histTexto[qualtexthist], 32, 100000, .6, .6, 0)
+		draw_set_alpha(1);
+		draw_set_colour(c_white);
+		draw_set_valign(fa_middle);
+	}
+	
+break;
+
 case GameRoom:
 	
 	draw_sprite_ext(sprSetaRelogio, -1, 38.5, 35, .5, .5, global.tempo/-1, c_white, 1);
@@ -95,32 +112,7 @@ case GameRoom:
 	
 break;
 
-case OptionsMenuRoom:
-	
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_set_colour(#E0D9D9);
-	
-	var _bck = point_in_rectangle(mouse_x, mouse_y, 11, 12, 35, 18)
-	//draw_rectangle(11, 12, 35, 18, 1);
-	//draw_set_alpha(.8+(!_bck*.2))
-	draw_set_colour(merge_colour(#E0D9D9, #DDCAC3, _bck));
-	draw_text_transformed(
-		24, 15,
-		"Back", 
-		.5*(bckSize), .5*bckSize, 0
-	)
-	//draw_set_alpha(1)
-	draw_set_colour(#E0D9D9);
-	
-	draw_text_transformed(
-		200, 200,
-		"X: "+string(mouse_x)+"  - Y: "+string(mouse_y), 
-		.5, .5, 0
-	)
-	draw_set_colour(c_white)
-	
-break;
+
 
 
 

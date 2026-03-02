@@ -36,21 +36,21 @@ switch documento {
 		//Passaporte - ID
 		draw_text_ext_transformed(
 			x-14 - (20 * (image_xscale-1)), y-8 - (10 * (image_yscale-1)), 
-			"Alfredo", 10, 10000, 
+			oNPC.novoalien.nome, 10, 10000, 
 			image_xscale, image_yscale, 0
 		);
 
 		//Passaporte - NC
 		draw_text_ext_transformed(
 			x-13 - (20 * (image_xscale-1)), y+2 - (0 * (image_yscale-1)), 
-			"Patroclus", 10, 10000, 
+			oNPC.novoalien.nc, 10, 10000, 
 			image_xscale, image_yscale, 0
 		);
 
 		//Passaporte - IP
 		draw_text_ext_transformed(
 			x-14 - (20 * (image_xscale-1)), y+12 - (-10 * (image_yscale-1)), 
-			"b7o29", 10, 10000, 
+			oNPC.novoalien.ip, 10, 10000, 
 			image_xscale, image_yscale, 0
 		);
 
@@ -58,7 +58,7 @@ switch documento {
 		draw_set_colour(#773A4D);
 		draw_text_ext_transformed(
 			x-13 - (10 * (image_xscale-1)), y+24 - (-20 * (image_yscale-1)), 
-			"02/48/92", 10, 10000, 
+			oNPC.novoalien.docs[0].val, 10, 10000, 
 			image_xscale, image_yscale, 0
 		);
 

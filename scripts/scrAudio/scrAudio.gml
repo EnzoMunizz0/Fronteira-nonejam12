@@ -65,6 +65,23 @@ function step_musica() {
 function on_beat() {
 	switch(room) {
 		case StartMenuRoom:
+			switch (global.beat) {
+			case 8:
+				oUI.textsplashAlpha = 0;
+				oUI.textsplash = "Jogo MUITO incompleto\n(foi mal)"
+			break;
+			case 16:
+				oUI.textsplashAlpha = 0;
+				oUI.textsplash = "Feito para:\nNonejam 12"
+			break;
+			case 24:
+				oUI.textsplashAlpha = 0;
+				oUI.textsplash = "Aproveite o jogo!"
+			break;
+			case 32:
+				oUI.menuFunction = oUI.menuComeco;
+			break;
+			}
 			if (global.beat % 8 == 0) screenshake(5);
 			
 		break;

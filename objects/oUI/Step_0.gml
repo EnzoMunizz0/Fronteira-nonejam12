@@ -3,12 +3,28 @@ switch room {
 
 
 case StartMenuRoom:
-
 	menuFunction();
-
-
 break;
 
+case HistoryRoom:
+	
+	alphatexthist = lerp(alphatexthist, alphatexthistfin, .025);
+	if (InputPressed(INPUT_VERB.ACCEPT) && alphatexthist >= .98 && !vaiprojogo) {
+		if(qualtexthist >= array_length(histTexto)-1) {
+			nextRoom(GameRoom);
+			vaiprojogo = 1;
+		} else {
+			alphatexthist = 0;
+			qualtexthist++;
+			puladedesen--;
+			if (puladedesen < 1) {
+				oCam.finalposy += 216;
+				puladedesen = 2;
+			}
+		}
+	}
+	
+break;
 
 case GameRoom:
 	// Aba de pesquisa - computador

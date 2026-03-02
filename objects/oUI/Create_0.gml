@@ -35,12 +35,38 @@ verificacao = function(_name = "") { // Verificação de nomes existentes - comp
 }
 
 
+//Menu de história
+histTexto = [
+	"A confederação intergaláctica foi\nformada depois de muito tempo.",
+	"Representantes de toda a Via Láctea\nentraram em acordo quanto às\nviagens interplanetárias.",
+	"Regras foram criadas e desde então seres\nde toda a galáxia podem viajar para outros \nplanetas em pouco tempo com portos espaciais.",
+	"Com isso, também surgem seres que\npassam para outros planetas ilegalmente,\ncom documentos ou passaportes irregulares.",
+	"O seu trabalho no planeta Terra\nserá analisar cada viajante e...",
+	"deportar aqueles que estiverem quebrando as\nregras da AGVI\n(Agência Galáctica de Viagens Interplanetárias)."
+];
+alphatexthist = 0
+alphatexthistfin = 1;
+qualtexthist = 0;
+puladedesen = 2;
+vaiprojogo = 0;
+
+
 //Menu Inicial
 optionsPos = 960	// Options Position
 defaultCamPos = [384/2, 540]
 bckSize = 1;		// Tamanho do botão de voltar
+splashBGAlpha = 1;
+textsplash = "Criado por: EnzoMunizz0";
+textsplashAlpha = 0;
+jafoisplash = 0;
+
+menuSplash = function() {
+	textsplashAlpha = lerp(textsplashAlpha, 1, 0.1);
+}
 
 menuComeco = function() {
+	textsplashAlpha = 0;
+	splashBGAlpha = 0;
 	smisel += InputPressed(INPUT_VERB.DOWN) - InputPressed(INPUT_VERB.UP);
 	smisel = clamp(smisel, 1, array_length(startmenuitens));
 	
@@ -79,7 +105,7 @@ menuLoadGame = function() {
 	
 }
 menuEntrandoJogo = function() {
-	nextRoom(GameRoom);
+	nextRoom(HistoryRoom);
 }
 menuSair = function() {
 	game_end();
@@ -96,5 +122,5 @@ startmenuitens = [
 smisel = 0;
 podeaperta = 1;
 
-menuFunction = menuComeco;
+menuFunction = menuSplash;
 

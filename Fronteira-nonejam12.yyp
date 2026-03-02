@@ -72,6 +72,7 @@
     {"$GMFolder":"","%Name":"Cursores","folderPath":"folders/Sprites/Cursores.yy","name":"Cursores","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Documentos","folderPath":"folders/Sprites/Documentos.yy","name":"Documentos","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Passaporte","folderPath":"folders/Sprites/Documentos/Passaporte.yy","name":"Passaporte","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Historia","folderPath":"folders/Sprites/Historia.yy","name":"Historia","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Transitions","folderPath":"folders/Transitions.yy","name":"Transitions","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[
@@ -110,6 +111,7 @@
     {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
     {"id":{"name":"GameRoom_1backup","path":"rooms/GameRoom_1backup/GameRoom_1backup.yy",},},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
+    {"id":{"name":"HistoryRoom","path":"rooms/HistoryRoom/HistoryRoom.yy",},},
     {"id":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
     {"id":{"name":"SplashRoom","path":"rooms/SplashRoom/SplashRoom.yy",},},
     {"id":{"name":"StartMenuRoom","path":"rooms/StartMenuRoom/StartMenuRoom.yy",},},
@@ -457,6 +459,7 @@
     {"id":{"name":"sprCursorPointClick","path":"sprites/sprCursorPointClick/sprCursorPointClick.yy",},},
     {"id":{"name":"sprCursorTime","path":"sprites/sprCursorTime/sprCursorTime.yy",},},
     {"id":{"name":"sprCursorTimeClick","path":"sprites/sprCursorTimeClick/sprCursorTimeClick.yy",},},
+    {"id":{"name":"sprHistoria","path":"sprites/sprHistoria/sprHistoria.yy",},},
     {"id":{"name":"sprLogo1","path":"sprites/sprLogo1/sprLogo1.yy",},},
     {"id":{"name":"sprLogo3D","path":"sprites/sprLogo3D/sprLogo3D.yy",},},
     {"id":{"name":"sprLogoLN","path":"sprites/sprLogoLN/sprLogoLN.yy",},},
@@ -496,6 +499,7 @@
     {"roomId":{"name":"TemplateRoom","path":"rooms/TemplateRoom/TemplateRoom.yy",},},
     {"roomId":{"name":"GameRoom_1backup","path":"rooms/GameRoom_1backup/GameRoom_1backup.yy",},},
     {"roomId":{"name":"OptionsMenuRoom","path":"rooms/OptionsMenuRoom/OptionsMenuRoom.yy",},},
+    {"roomId":{"name":"HistoryRoom","path":"rooms/HistoryRoom/HistoryRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
