@@ -10,6 +10,7 @@ global.cursorForma = "default";
 
 
 
+
 irandom(randomise());
 
 
@@ -24,7 +25,7 @@ switch room {
 		//surface_resize(application_surface, 256*3, 144*3);
 		instance_create_layer(x, y, "MenuItems", oUI);
 		instance_create_layer(384/2, (room_height/2)-2, "MenuItems", oCam);
-		create_musica()
+		create_musica(global.songs.Menu)
 		//global.musica = global.songs.Menu;
 		
 	break;
@@ -36,6 +37,8 @@ switch room {
 	
 	case GameRoom:
 		instance_create_layer(0, 0, "UI", oUI);
+		create_musica();
+		global.comecaojogo = 0;
 		/*var _docvars = { // Adicionar variáveis ao obj oDocument
 			documento: "Passaporte",
 			

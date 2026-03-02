@@ -3,6 +3,13 @@ menuFunction = 0;
 
 
 //Gameplay
+diaalphadelay = 200;
+diaalpha = 1;
+
+cdlAlpha = 0; // cdl = Caderno De Leis (AGVI)
+cdlAlphaFinal = 0; // cdl = Caderno De Leis (AGVI)
+abriucdl = 0;
+
 botoes = 0; // Botões alavanca
 botoesidx = 0;
 botoesPodeAperta = 1;
@@ -29,7 +36,7 @@ verificacao = function(_name = "") { // Verificação de nomes existentes - comp
 			continue;
 		}
 		verPPsprite = (global.aliens[i].pcu) ? sprBGv : sprBGx;
-		verNAsprite = sprBGv;
+		verNAsprite = (!oNPC.vaisererrado) ? sprBGv : sprBGx;
 	}
 	
 }
@@ -61,7 +68,7 @@ textsplashAlpha = 0;
 jafoisplash = 0;
 
 menuSplash = function() {
-	textsplashAlpha = lerp(textsplashAlpha, 1, 0.1);
+	textsplashAlpha = lerp(textsplashAlpha, 1, 0.05);
 }
 
 menuComeco = function() {

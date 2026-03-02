@@ -1,4 +1,28 @@
 
+global.viajantesRestantes = 5;
+global.viajantesMax = 5;
+global.dia = 1;
+
+global.erros = 0;
+
+
+global.levels = [
+	{
+		dia: 1,
+		vmax: 5,
+	},
+	{
+		dia: 2,
+		vmax: 5,
+	},
+	{
+		dia: 3,
+		vmax: 5,
+	}
+	
+];
+
+
 global.planetas = [
 	"Terra",		// 0
 	"Nekkar",		// 1

@@ -62,7 +62,7 @@ image_yscale = image_xscale; // pra sempre ficar do mesmo tamanho sem se esticar
 
 if (instance_exists(oDocument)) {
 	var _car = place_meeting(x, y, oDocument);
-	if (_car && mouse_check_button_pressed(mb_right) && !oDocument.vistoun && !oDocument.vistous && oDocument.documento == "Passaporte") {
+	if (_car && mouse_check_button_pressed(mb_right) && !oDocument.vistoun && !oDocument.vistous && oDocument.documento == "Passaporte" && !oDocument.pequeno) {
 		if (!oDocument.vistoun) {
 			oDocument.qualvisto = 0;
 			oDocument.vistoposoffset[2] = oDocument.x - oDocument.vistopos[2];

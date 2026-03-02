@@ -8,3 +8,4 @@ global.docsel = 0; // Eu sei que eu poderia fazer os dois em um só, mas eu to c
 
 global.tempo = 0;
 
+global.comecaojogo = 0;

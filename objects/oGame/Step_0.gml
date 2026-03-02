@@ -15,10 +15,10 @@ if (inTrasicao) {
 }
 
 	
-if (InputPressed(INPUT_VERB.LUZNEGRA) && room == GameRoom) {
+/*if (InputPressed(INPUT_VERB.LUZNEGRA) && room == GameRoom) {
 	luznegra = !luznegra;
 	global.mouseTrancado = !global.mouseTrancado;
-}
+}*/
 
 
 /*if (instance_exists(oDocument)) {

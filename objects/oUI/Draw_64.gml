@@ -43,6 +43,41 @@ case GameRoom:
 		_finalText[0]+1, _finalText[1]+6, 
 		0
 	)
+	
+	draw_set_halign(fa_center);
+	draw_text(144/2, 36, string(clamp(global.viajantesRestantes, 0, (global.dia <= 3) ? global.levels[global.dia-1].vmax : 5))+"/5");
+	
+	draw_set_alpha(cdlAlpha);
+	draw_sprite(sprCadernoDeLeis, -1, 0, 0);
+	draw_set_alpha(1);
+	
+	draw_set_font(fPixelDoc);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_top);
+	draw_set_alpha(!abriucdl);
+	draw_set_colour(#1A080E);
+	draw_text_ext_transformed(device_mouse_x_to_gui(0)+.5, device_mouse_y_to_gui(0)+10.5, "Aperte 'F' para abrir o\nCaderno de Leis", 10, 100000, .6, .6, 0);
+	draw_set_colour(#E0D9D9);
+	draw_text_ext_transformed(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0)+10, "Aperte 'F' para abrir o\nCaderno de Leis", 10, 100000, .6, .6, 0);
+	draw_set_colour(c_white);
+	draw_set_alpha(1);
+	draw_set_valign(fa_middle);
+	draw_set_font(fPixelRegular);
+	
+	
+	draw_set_colour(#100F19)
+	draw_set_alpha(diaalpha)
+	draw_rectangle(-10, -10, room_width+10, room_height+10, 0)
+	
+	draw_set_colour(#E0D9D9);
+	draw_text(384/2, 216/2, "Dia: "+string(global.dia));
+	
+	draw_set_colour(#DDCAC3);
+	draw_set_alpha(diaalpha*(global.dia != 1))
+	draw_text_transformed(384/2, (216/2)+24, "Erros: "+string(global.erros), .6, .6, 0);
+
+	draw_set_colour(c_white)
+	draw_set_alpha(1)
 
 break;
 

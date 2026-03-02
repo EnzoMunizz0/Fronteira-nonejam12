@@ -104,7 +104,7 @@ image_yscale = image_xscale; // pra sempre ficar do mesmo tamanho sem se esticar
 
 if (image_xscale <= 0 && sumiu) instance_destroy();
 
-angulo += ((keyRotH*arrastando*2) - (keyRotAH*arrastando*2)) * (keyRotVel+1);
+//angulo += ((keyRotH*arrastando*2) - (keyRotAH*arrastando*2)) * (keyRotVel+1);
 image_angle = lerp(image_angle, angulo, .25);
 
 if (!sumiu) {

@@ -27,6 +27,13 @@ case HistoryRoom:
 break;
 
 case GameRoom:
+	
+	if (!global.comecaojogo) {
+		diaalphadelay--;
+		if (diaalphadelay <= 0) diaalpha = lerp(diaalpha, 0, .05);
+		//if ()
+	}
+	
 	// Aba de pesquisa - computador
 	var _camp = point_in_rectangle(mouse_x, mouse_y, 222, 17, 349, 25) && !global.mouseTrancado;
 	// Relógio
@@ -70,17 +77,14 @@ case GameRoom:
 	barDelay = clamp(barDelay, 0, 100);
 	global.tempo+=.2;
 	
-break;
-
-case OptionsMenuRoom:
-	
-	var _bck = point_in_rectangle(mouse_x, mouse_y, 11, 12, 35, 18)
-	bckSize = lerp(bckSize, 1+(_bck*.1), .25);
-	if (_bck) {
-		global.cursorForma = "Point";
-		if (mouse_check_button_pressed(mb_left)) nextRoom(StartMenuRoom);
+	if (InputPressed(INPUT_VERB.LUZNEGRA) or (InputPressed(INPUT_VERB.ACCEPT) && cdlAlphaFinal = 1) && diaalpha <= 0.01) {
+		abriucdl = 1;
+		cdlAlphaFinal = !cdlAlphaFinal;
+		global.erros = 0;
+		global.mouseTrancado = !global.mouseTrancado;
+		if (abriucdl = 1 && cdlAlphaFinal = 0) global.comecaojogo = 1;
 	}
-	
+	cdlAlpha = lerp(cdlAlpha, cdlAlphaFinal, .2);
 	
 break;
 }
